@@ -16,6 +16,7 @@
 		F6B94B4217267E3500A037B8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B94B4117267E3500A037B8 /* Default.png */; };
 		F6B94B4417267E3500A037B8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B94B4317267E3500A037B8 /* Default@2x.png */; };
 		F6B94B4617267E3500A037B8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B94B4517267E3500A037B8 /* Default-568h@2x.png */; };
+		F6B94B4E17267E8800A037B8 /* SGBSegmentedControlTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B94B4D17267E8800A037B8 /* SGBSegmentedControlTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		F6B94B4117267E3500A037B8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F6B94B4317267E3500A037B8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F6B94B4517267E3500A037B8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F6B94B4C17267E8800A037B8 /* SGBSegmentedControlTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGBSegmentedControlTestViewController.h; sourceTree = "<group>"; };
+		F6B94B4D17267E8800A037B8 /* SGBSegmentedControlTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGBSegmentedControlTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				F6B94B3E17267E3500A037B8 /* SGBAppDelegate.h */,
 				F6B94B3F17267E3500A037B8 /* SGBAppDelegate.m */,
+				F6B94B4C17267E8800A037B8 /* SGBSegmentedControlTestViewController.h */,
+				F6B94B4D17267E8800A037B8 /* SGBSegmentedControlTestViewController.m */,
 				F6B94B3617267E3500A037B8 /* Supporting Files */,
 			);
 			path = SegmentedControlLeakTester;
@@ -167,6 +172,7 @@
 			files = (
 				F6B94B3C17267E3500A037B8 /* main.m in Sources */,
 				F6B94B4017267E3500A037B8 /* SGBAppDelegate.m in Sources */,
+				F6B94B4E17267E8800A037B8 /* SGBSegmentedControlTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +254,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SegmentedControlLeakTester/SegmentedControlLeakTester-Prefix.pch";
 				INFOPLIST_FILE = "SegmentedControlLeakTester/SegmentedControlLeakTester-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -259,7 +267,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SegmentedControlLeakTester/SegmentedControlLeakTester-Prefix.pch";
 				INFOPLIST_FILE = "SegmentedControlLeakTester/SegmentedControlLeakTester-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
